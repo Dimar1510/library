@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <span class="material-symbols-outlined">
+            auto_stories
+        </span>
+        <h1>W Library</h1>
+    </div>
+    <div class="topbar">
+        <div class="util">
+            <div class="search">
+                <input type="search" name="search" id="searchbar">
+                <button type="submit" id="searchButton"><span class="material-symbols-outlined">
+                    search
+                    </span>
+                </button>
+            </div>
+            <div class="reset">
+                <button type="button" id="btnReset"><span class="material-symbols-outlined">
+                    reset_image
+                    </span>
+                </button>
+            </div>
+            <div class="filter">
+                <label for="filter-select">Sort all by</label>
+                <select name="filters" id="filter-select">
+                    <option value="oldFirst">Old first</option>
+                    <option value="newFirst">New first</option>
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                </select>
+            </div>
+     
+        </div>
+        <div class="info">
+            <div class="booksQ">Books: 0</div>
+            <div>|</div>
+            <div class="readQ">Books read: 0</div>
+        </div>
+    </div>
+    <div class="grid">
+        
+        <!-- <div class="newBook">
+            
+            <h2>Title</h2>
+            <h3>Author</h3>
+            <h4>Number of pages:</h4>
+            <button class="changeRead">Read</button>
+            <button class="remove">Remove</button>
+        </div> -->
+    </div> 
+    
+    <dialog>
+        <form class="form" action="" method="dialog">
+            <ul>
+                <li class="dialog-title">
+                        <h2>Add book</h2>
+                        <button type="button" id="cancel"><span class="material-symbols-outlined">
+                            close
+                        </span></button>
+                </li>
+                <li>
+                    <input type="text" name="title" id="title" autofocus  placeholder="Title" required>
+                    <div class="title-error">This title is already used</div>
+                </li>
+                <li>
+                    <input type="text" name="author" id="author" placeholder="Author" required>
+                </li>
+                <li>
+                    <input type="number" name="pages" id="pages" placeholder="Number of pages" required>
+                </li>
+                <li class="checkbox">
+                    <span>Have you read it?</span>
+                    <input type="checkbox" name="read" id="read">
+                </li>
+                <li class="submit">
+                   <button type="submit" id="submit">Submit</button>  
+                </li>
+              
+            </ul>
+        </form>
+    </dialog>
+    
+   
+<script src="script.js"></script>
+</body>
+</html>
