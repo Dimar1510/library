@@ -56,12 +56,11 @@ body {
   cursor: pointer;
   border: none;
   transition: 0.3s;
-  
   font-size: 1rem;
 }
 
 .topbar button:hover{
-  scale: 1.1;
+  background-color: hsl(21, 45%, 47%);
 }
 
 .search {
@@ -90,10 +89,10 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   overflow: hidden;
-  border: none;
+  border-left: 1rem solid var(--clr-primary);
   box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.2);
-  background-color: var(--clr-secondary);
-  
+  background: url(images/paper.jpg);
+  background-size: cover;
 }
 
 .btnGroup {
@@ -116,6 +115,7 @@ body {
 }
 
 .start {
+  border: none;
   padding: 0;
   transition: 0.3s ease-in-out;
 }
